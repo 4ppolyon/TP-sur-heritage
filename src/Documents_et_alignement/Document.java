@@ -33,7 +33,7 @@ public class Document {
 		Paragraphe p = null;
 		while (s.hasNextLine()) {
 			String ligne = s.nextLine().trim();
-			if (ligne.length() == 0) {
+			if (ligne.isEmpty()) {
 				if (p != null) {
 					c.ajoute(p);
 					p = null;
@@ -46,7 +46,7 @@ public class Document {
 					nbChap++;
 				} else {
 					if (p == null)
-						p = new Paragraphe();
+						p = new ParagrapheDroite();
 					for (int i = 0; i < mots.length; i++)
 						p.ajoute(mots[i]);
 				}
