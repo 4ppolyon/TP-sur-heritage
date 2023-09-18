@@ -1,0 +1,7 @@
+1)
+C un 42
+B un X
+C un 42
+A deux
+2)
+Voir class D, E, F et DEF.
