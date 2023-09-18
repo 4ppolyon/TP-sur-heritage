@@ -5,14 +5,14 @@ package Documents_et_alignement;
  * sur une largeur donnée avec un centrage à gauche.
  * @author Guillaume Huard
  */
-public class Paragraphe {
+public abstract class Paragraphe {
 	private final int nbMaxMots = 5000;
 	private String[] mots;
 	private int nbMots;
-	private String[] lignes;
-	private int nbLignes;
+	String[] lignes;
+	int nbLignes;
 	private boolean aJour;
-	private int largeur;
+	int largeur;
 
 	/**
 	 * Paragraphe vide de largeur 80.
@@ -34,7 +34,7 @@ public class Paragraphe {
 		largeur = l;
 		aJour = false;
 	}
-	
+
 	/**
 	 * Ajoute un mot au paragraphe.
 	 * @param mot Mot à ajouter
@@ -49,7 +49,7 @@ public class Paragraphe {
 	 * Calcule la représentation textuelle (tableau de lignes) du paragraphe
 	 * si besoin (booléen aJour).
 	 */
-	private void calculeLignes() {
+	void calculeLignes() {
 		if (!aJour) {
 			nbLignes = 0;
 			// Le stringBuilder est plus efficace pour les opérations

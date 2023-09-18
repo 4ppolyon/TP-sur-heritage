@@ -32,7 +32,7 @@ public class TestParagraphe {
 					}
 				} else {
 					if (p == null)
-						p = new Paragraphe();
+						p = new ParagrapheGauche();
 					String[] mots = ligne.split("\\s\\s*");
 					for (int i = 0; i < mots.length; i++)
 						p.ajoute(mots[i]);
