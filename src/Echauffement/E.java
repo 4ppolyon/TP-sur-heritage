@@ -1,6 +1,8 @@
+package Echauffement;
+
 public class E extends D{
     @Override
     String un (char x){
-        return "E un "+x;
+        return "Echauffement.E un "+x;
     }
 }
