@@ -6,7 +6,7 @@ package Documents_et_alignement;
  * 
  * @author Guillaume Huard
  */
-public class TexteCentre {
+public class TexteCentre extends Texte {
 	private String texte;
 	private int largeur;
 
@@ -15,24 +15,9 @@ public class TexteCentre {
 	 * @param t La chaîne de caractères à centrer
 	 */
 	public TexteCentre(String t) {
+		super(t);
 		texte = t;
 		largeur = 80;
-	}
-
-	/**
-	 * Change la largeur du texte centré.
-	 * @param l Nouvelle largeur
-	 */
-	public void fixeLargeur(int l) {
-		largeur = l;
-	}
-	
-	/**
-	 * Renvoie la chaîne de caractères de ce texte non centrée.
-	 * @return Texte non centré
-	 */
-	public String texte() {
-		return texte;
 	}
 
 	/**

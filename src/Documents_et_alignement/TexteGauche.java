@@ -1,6 +1,6 @@
 package Documents_et_alignement;
 
-public class TexteGauche extends TexteCentre{
+public class TexteGauche extends Texte{
     public TexteGauche(String s){
         super(s);
     }
