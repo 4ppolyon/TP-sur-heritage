@@ -1,3 +1,4 @@
+Question 1
 1)
 Echauffement.C un 42
 Echauffement.B un X
@@ -5,3 +6,9 @@ Echauffement.C un 42
 Echauffement.A deux
 2)
 Voir class Echauffement.D, Echauffement.E, Echauffement.F et Echauffement.DEF.
+Question 2.1
+1)
+Les ToString() dans les sous classes.
+2)
+La classe paragraphe sert à faire des lignes d'un certain nombre de caractères. Et les classe Paragraphes (droite et gauche) servent à faire la MEP
+Question 2.2
