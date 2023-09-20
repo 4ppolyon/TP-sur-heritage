@@ -1,14 +1,32 @@
 Question 1
+
 1)
 Echauffement.C un 42
 Echauffement.B un X
 Echauffement.C un 42
 Echauffement.A deux
+
 2)
 Voir class Echauffement.D, Echauffement.E, Echauffement.F et Echauffement.DEF.
+
 Question 2.1
+
 1)
 Les ToString() dans les sous classes.
+
 2)
 La classe paragraphe sert à faire des lignes d'un certain nombre de caractères. Et les classe Paragraphes (droite et gauche) servent à faire la MEP
+
 Question 2.2
+
+1)
+La classe Texte deviens une classe abstraite et 3 classes filles sont créées : TexteSimple, TexteDroit et TexteGauche. Dans lesquelles on redéfini la méthode ToString().
+
+2)
+Oui en créant une String du texte voulu et en créant 3 objets de type TexteSimple, TexteDroit et TexteGauche. Puis en applicant les modification pour chaque objet.
+
+3)
+non parce qu'on met des espaces et on fait la MEP dans la méthode ToString().
+
+Question 3
+
