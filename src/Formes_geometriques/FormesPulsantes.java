@@ -7,10 +7,10 @@ import java.util.Random;
  */
 public class FormesPulsantes {
     final static int nbFormes = 4;
-    final static int nbObjets = 5;
-    final static int etapesPulsations = 20;
-    final static int amplitudePulsation = 20;
-    final static int delai = 100;
+    final static int nbObjets = 10;
+    final static int etapesPulsations = 100;
+    final static int amplitudePulsation = 30;
+    final static int delai = 10;
 
     static Forme creerForme(int type, MachineTrace m) {
         switch (type) {

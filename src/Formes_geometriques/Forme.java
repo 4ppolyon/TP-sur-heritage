@@ -1,11 +1,16 @@
 package Formes_geometriques;
 
 public abstract class Forme {
+    int positionX;
+    int positionY;
+    int taille;
+
     void fixerPosition(int x, int y) {
-        throw new RuntimeException("Méthode non implémentée");
+        positionX = x;
+        positionY = y;
     }
-    void fixerTaille(int t) {
-        throw new RuntimeException("Méthode non implémentée");
+    void fixerTaille(int t){
+        taille = t;
     }
     void dessiner() {
         throw new RuntimeException("Méthode non implémentée");

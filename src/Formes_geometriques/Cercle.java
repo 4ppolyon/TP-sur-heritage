@@ -1,25 +1,21 @@
 package Formes_geometriques;
 
 public class Cercle extends Forme{
-    int taille;
     MachineTrace m;
     public Cercle(MachineTrace m) {
         super();
         this.m = m;
     }
-    public void fixerPosition(int x, int y) {
-        m.placer(x, y);
-    }
-    public void fixerTaille(int t) {
-        taille = t;
-    }
     public void dessiner() {
-        m.placer(-taille, -taille);
+        m.placer(positionX, positionY);
+        m.avancer((double) taille / 2);
         m.baisser();
-        for(int i = 0; i < taille; i++) {
-            m.avancer((double) 360 /taille);
-            m.tournerGauche((double) 360 /taille);
+        m.tournerGauche(90);
+        for (int i = 0; i < 360; i++) {
+            m.avancer(Math.PI * taille / 360);
+            m.tournerGauche(1);
         }
+        m.tournerDroite(90);
         m.lever();
     }
 }
