@@ -1,4 +1,4 @@
-package Formes_géométriques;
+package Formes_geometriques;
 
 class SegmentsAlignes
 {

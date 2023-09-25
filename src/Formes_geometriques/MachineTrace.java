@@ -1,4 +1,4 @@
-package Formes_géométriques;
+package Formes_geometriques;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
