@@ -19,15 +19,10 @@ public class Losange extends Forme{
     public void dessiner() {
         m.placer(positionX, positionY);
         m.baisser();
-        m.tournerGauche(135);
-        m.avancer(taille);
-        m.tournerGauche(135);
-        m.avancer(taille);
-        m.tournerGauche(45);
-        m.avancer(taille);
-        m.tournerGauche(135);
-        m.avancer(taille);
-        m.tournerGauche(45);
+        m.placer(positionX + (double) 3*taille/4, positionY + (double) taille/4);
+        m.placer(positionX + taille, positionY + taille);
+        m.placer(positionX + (double) taille/4, positionY + (double) 3*taille/4);
+        m.placer(positionX, positionY);
         m.lever();
     }
 }
