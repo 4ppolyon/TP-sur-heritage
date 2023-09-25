@@ -8,9 +8,9 @@ import java.util.Random;
 public class FormesPulsantes {
     final static int nbFormes = 4;
     final static int nbObjets = 10;
-    final static int etapesPulsations = 100;
-    final static int amplitudePulsation = 30;
-    final static int delai = 10;
+    final static int etapesPulsations = 1000;
+    final static int amplitudePulsation = 350;
+    final static int delai = 2;
 
     static Forme creerForme(int type, MachineTrace m) {
         switch (type) {
@@ -33,7 +33,7 @@ public class FormesPulsantes {
         int[] tailles;
         Random r;
 
-        m = new MachineTrace(400, 400);
+        m = new MachineTrace(1200, 1200);
         m.masquerPointeur();
         m.rafraichissementAutomatique(false);
 
