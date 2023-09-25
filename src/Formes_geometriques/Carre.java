@@ -27,5 +27,6 @@ public class Carre extends Forme {
         m.tournerGauche(90);
         m.placer(positionX, positionY);
         m.lever();
+        m.tournerGauche(90);
     }
 }
