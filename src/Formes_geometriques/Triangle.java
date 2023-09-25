@@ -21,9 +21,7 @@ public class Triangle extends Forme {
         m.placer(positionX, positionY);
         m.baisser();
         m.placer(positionX + taille, positionY);
-        m.tournerGauche(60);
         m.placer(positionX + (double) taille/2, positionY + taille);
-        m.tournerGauche(60);
         m.placer(positionX, positionY);
         m.lever();
     }
