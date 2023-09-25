@@ -1,12 +1,12 @@
 package Formes_geometriques;
 
 public class Carre extends Forme {
-    MachineTrace m;
     public Carre(MachineTrace m) {
         super();
         this.m = m;
     }
-    public void dessiner() {
+    public void dessin_specifique() {
+        m.baisser();
         m.placer(positionX, positionY);
         for (int i = 0; i < 4; i++) {
             m.baisser();

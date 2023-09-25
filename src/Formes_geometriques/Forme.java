@@ -4,7 +4,7 @@ public abstract class Forme {
     int positionX;
     int positionY;
     int taille;
-
+    MachineTrace m;
     void fixerPosition(int x, int y) {
         positionX = x;
         positionY = y;
@@ -12,7 +12,12 @@ public abstract class Forme {
     void fixerTaille(int t){
         taille = t;
     }
+    void dessin_specifique() {
+        // dessin spécifique à chaque forme
+    }
     void dessiner() {
-        throw new RuntimeException("Méthode non implémentée");
+        m.placer(positionX, positionY);
+        dessin_specifique();
+        m.lever();
     }
 }
